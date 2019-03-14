@@ -10,40 +10,42 @@
 </head>
 <body>
 
-<section>
-  <div>
-    <h1>Send us a sweet little note</h1>
+  <section class="contact pad-t-2 pad-b-2">
+    <div class="max-length">
+      <h1>Send us a sweet little note</h1>
 
-    <form>
-      <div>
-        <label for="name">Name</label>
-        <input id="name" required>
-      </div>
+      <form class="push-0" method="POST" action="https://formspree.io/pate0517@algonquinlive.com">
+        <div class="push">
+          <label for="name">Name</label>
+          <input id="name" name="name" required>
+        </div>
 
-      <div>
-        <label for="email">Your email</label>
-        <input id="email" type="email" placeholder>
-      </div>
+        <div class="push">
+          <label for="email">Your email</label>
+          <input id="email" type="email" name="email" required>
+        </div>
 
-      <div>
-        <label for="subject">Your email</label>
-        <select id="subject">
-          <option>Get a quote!</option>
-          <option>General question</option>
-          <option>Just to talk</option>
-        </select>
-      </div>
+        <div class="push">
+          <label for="subject">Your email</label>
+          <select id="subject" name="_subject">
+            <option>Get a quote!</option>
+            <option>General question</option>
+            <option>Just to talk</option>
+          </select>
+        </div>
 
-      <div>
-        <label for="details">What's up?</label>
-        <textarea id="details" required></textarea>
-      </div>
-      <div>
-        <button type="submit">Send message></button>
-      </div>
-    </form>
-  </div>
-</section>
+        <div class="push">
+          <label for="details">What's up?</label>
+          <textarea id="details" name="message" required></textarea>
+        </div>
+
+        <div>
+          <button class="btn btn-light mega" type="submit">Send message</button>
+        </div>
+
+      </form>
+    </div>
+  </section>
 
 
 </body>
